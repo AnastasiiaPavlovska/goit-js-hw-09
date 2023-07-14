@@ -5,6 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Countdown timer</title>
     <link rel="stylesheet" href="css/common.css" />
+    <style>
+      .timer {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+      }
+
+      .value {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .field {
+        background-color: black;
+        box-shadow: 2px 2px 3px 1px black;
+        border-radius: 10px;
+        width: 80px;
+        text-align: center;
+      }
+
+      .value {
+        color: white;
+        font-size: 24px;
+        font-weight: 700;
+      }
+
+      .label {
+        color: white;
+        font-size: 15px;
+        font-weight: 700;
+      }
+    </style>
   </head>
   <body>
     <p><a href="index.html">Go back</a></p>
@@ -31,6 +67,6 @@
       </div>
     </div>
 
-    <script src="js/02-timer.js" type="module"></script>
+    <script src="./js/02-timer.js" type="module"></script>
   </body>
 </html>
