@@ -50,6 +50,10 @@ function countDown() {
 }
 
 function showTimer() {
+  if (timeDiff < 0) {
+    clearInterval(id);
+    return;
+  }
   const timeCounter = convertMs(timeDiff);
   timeDiff -= 1000;
   refs.days.textContent = String(timeCounter.days).padStart(2, '0');
